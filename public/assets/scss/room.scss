@@ -1,0 +1,137 @@
+// breakpoints
+.fav_star {
+    background: none;
+    border: none;
+
+    &:hover {
+        background: none
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.fa-star.checked {
+    color: orange;
+}
+
+.star.selected {
+    color: red;
+}
+
+
+.property-tags {
+    li:not(:last-of-type) {
+        border-right: 0;
+        border-bottom: 2px dashed;
+    }
+
+    .fas {
+        min-width: 26px;
+        text-align: left;
+    }
+}
+
+#map {
+    height: 400px;
+    /* Adjust the height as needed */
+    width: 100%;
+    /* Make the map fill the container */
+}
+
+/* Hide the radio buttons for Review */
+.rating {
+    line-height: 1;
+    display: inline-block;
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    label {
+        float: right;
+        color: #ddd;
+    }
+
+    input[type="radio"]:checked~label {
+        color: orange;
+        /* Change color for checked stars */
+    }
+
+    label:hover,
+    label:hover~label {
+        color: orange;
+    }
+}
+
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+    padding: 0;
+}
+
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+    top: 0;
+    bottom: 0;
+}
+
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+    padding: 0;
+}
+
+
+// for zoom animation
+// uncomment this part if you haven't added this code anywhere else
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+
+/****************************
+*** LARGER MOBILE DEVICES ***
+*****************************/
+@media only screen and (min-width: 640px) {}
+
+/*******************************
+*** TABLET & SMALLER LAPTOPS ***
+********************************/
+@media only screen and (min-width: 960px) {
+    .property-tags {
+        li:not(:last-of-type) {
+            border-right: 2px dashed white;
+            border-bottom: 0;
+        }
+    }
+}
+
+/**************
+*** DESKTOP ***
+***************/
+@media only screen and (min-width: 1200px) {}
+
+/*************************
+*** LARGE VIEWING SIZE ***
+**************************/
+@media only screen and (min-width: 1600px) {}

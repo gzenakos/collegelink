@@ -1,0 +1,161 @@
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/** customizing bootstrap variables **/
+
+$container-max-widths: (
+    sm: 670px,
+    md: 990px,
+    lg: 1230px,
+    xl: 1230px,
+    ) !default;
+$grid-breakpoints: (
+    xs: 0,
+    sm: 640px,
+    md: 960px,
+    lg: 1200px,
+    xl: 1600px,
+    ) !default;
+
+$yellow: #eb6639 !default;
+
+// List group
+
+$list-group-color: unset !default;
+$list-group-bg: unset !default;
+$list-group-border-color: unset !default;
+$list-group-border-width: 0;
+$list-group-border-radius: 0;
+
+$list-group-item-padding-y: 0.75rem !default;
+$list-group-item-padding-x: 1.25rem !default;
+
+// $list-group-hover-bg: $gray-100 !default;
+// $list-group-active-color: $component-active-color !default;
+// $list-group-active-bg: $component-active-bg !default;
+// $list-group-active-border-color: $list-group-active-bg !default;
+
+// $list-group-disabled-color: $gray-600 !default;
+// $list-group-disabled-bg: $list-group-bg !default;
+
+// $list-group-action-color: $gray-700 !default;
+// $list-group-action-hover-color: $list-group-action-color !default;
+
+// $list-group-action-active-color: $body-color !default;
+// $list-group-action-active-bg: $gray-200 !default;
+
+@import "../../bootstrap-4.5.3/scss/functions"; //grid
+@import "../../bootstrap-4.5.3/scss/variables"; //grid
+
+@import "../../bootstrap-4.5.3/scss/mixins";
+
+// Vendor
+
+@import "../../bootstrap-4.5.3/scss/vendor/rfs";
+
+// Deprecate
+
+@import "../../bootstrap-4.5.3/scss/mixins/deprecate";
+
+// Utilities
+@import "../../bootstrap-4.5.3/scss/mixins/breakpoints"; //grid
+
+@import "../../bootstrap-4.5.3/scss/mixins/hover";
+@import "../../bootstrap-4.5.3/scss/mixins/image";
+@import "../../bootstrap-4.5.3/scss/mixins/badge";
+@import "../../bootstrap-4.5.3/scss/mixins/resize";
+@import "../../bootstrap-4.5.3/scss/mixins/screen-reader";
+@import "../../bootstrap-4.5.3/scss/mixins/size";
+@import "../../bootstrap-4.5.3/scss/mixins/reset-text";
+@import "../../bootstrap-4.5.3/scss/mixins/text-emphasis";
+@import "../../bootstrap-4.5.3/scss/mixins/text-hide";
+@import "../../bootstrap-4.5.3/scss/mixins/text-truncate";
+@import "../../bootstrap-4.5.3/scss/mixins/visibility";
+
+// Components
+
+@import "../../bootstrap-4.5.3/scss/mixins/alert";
+@import "../../bootstrap-4.5.3/scss/mixins/buttons";
+@import "../../bootstrap-4.5.3/scss/mixins/caret";
+@import "../../bootstrap-4.5.3/scss/mixins/pagination";
+@import "../../bootstrap-4.5.3/scss/mixins/lists";
+@import "../../bootstrap-4.5.3/scss/mixins/list-group";
+@import "../../bootstrap-4.5.3/scss/mixins/nav-divider";
+@import "../../bootstrap-4.5.3/scss/mixins/forms";
+@import "../../bootstrap-4.5.3/scss/mixins/table-row";
+
+// Skins
+
+@import "../../bootstrap-4.5.3/scss/mixins/background-variant";
+@import "../../bootstrap-4.5.3/scss/mixins/border-radius";
+@import "../../bootstrap-4.5.3/scss/mixins/box-shadow";
+@import "../../bootstrap-4.5.3/scss/mixins/gradients";
+@import "../../bootstrap-4.5.3/scss/mixins/transition";
+
+// Layout
+@import "../../bootstrap-4.5.3/scss/mixins/grid-framework"; //grid
+@import "../../bootstrap-4.5.3/scss/mixins/grid"; //grid
+@import "../../bootstrap-4.5.3/scss/grid"; //grid
+@import "../../bootstrap-4.5.3/scss/utilities/display"; //grid
+@import "../../bootstrap-4.5.3/scss/utilities/flex"; //grid
+@import "../../bootstrap-4.5.3/scss/utilities/spacing"; //grid
+@import "../../bootstrap-4.5.3/scss/utilities/text"; //text
+
+@import "../../bootstrap-4.5.3/scss/mixins/clearfix";
+@import "../../bootstrap-4.5.3/scss/mixins/float";
+@import "../../bootstrap-4.5.3/scss/root";
+@import "../../bootstrap-4.5.3/scss/reboot";
+@import "../../bootstrap-4.5.3/scss/type";
+@import "../../bootstrap-4.5.3/scss/images";
+@import "../../bootstrap-4.5.3/scss/code";
+@import "../../bootstrap-4.5.3/scss/tables";
+@import "../../bootstrap-4.5.3/scss/forms";
+@import "../../bootstrap-4.5.3/scss/buttons";
+@import "../../bootstrap-4.5.3/scss/transitions";
+@import "../../bootstrap-4.5.3/scss/dropdown";
+@import "../../bootstrap-4.5.3/scss/button-group";
+@import "../../bootstrap-4.5.3/scss/input-group";
+@import "../../bootstrap-4.5.3/scss/custom-forms";
+@import "../../bootstrap-4.5.3/scss/nav";
+@import "../../bootstrap-4.5.3/scss/navbar";
+@import "../../bootstrap-4.5.3/scss/card";
+@import "../../bootstrap-4.5.3/scss/breadcrumb";
+@import "../../bootstrap-4.5.3/scss/pagination";
+@import "../../bootstrap-4.5.3/scss/badge";
+@import "../../bootstrap-4.5.3/scss/jumbotron";
+@import "../../bootstrap-4.5.3/scss/alert";
+@import "../../bootstrap-4.5.3/scss/progress";
+@import "../../bootstrap-4.5.3/scss/media";
+@import "../../bootstrap-4.5.3/scss/list-group";
+@import "../../bootstrap-4.5.3/scss/close";
+@import "../../bootstrap-4.5.3/scss/toasts";
+@import "../../bootstrap-4.5.3/scss/modal";
+@import "../../bootstrap-4.5.3/scss/tooltip";
+@import "../../bootstrap-4.5.3/scss/popover";
+@import "../../bootstrap-4.5.3/scss/carousel";
+@import "../../bootstrap-4.5.3/scss/spinners";
+@import "../../bootstrap-4.5.3/scss/utilities/align";
+@import "../../bootstrap-4.5.3/scss/utilities/background";
+@import "../../bootstrap-4.5.3/scss/utilities/borders";
+@import "../../bootstrap-4.5.3/scss/utilities/clearfix";
+@import "../../bootstrap-4.5.3/scss/utilities/embed";
+@import "../../bootstrap-4.5.3/scss/utilities/float";
+@import "../../bootstrap-4.5.3/scss/utilities/interactions";
+@import "../../bootstrap-4.5.3/scss/utilities/overflow";
+@import "../../bootstrap-4.5.3/scss/utilities/position";
+@import "../../bootstrap-4.5.3/scss/utilities/screenreaders";
+@import "../../bootstrap-4.5.3/scss/utilities/shadows";
+@import "../../bootstrap-4.5.3/scss/utilities/sizing";
+@import "../../bootstrap-4.5.3/scss/utilities/stretched-link";
+
+@import "../../bootstrap-4.5.3/scss/utilities/visibility";
+@import "../../bootstrap-4.5.3/scss/print";
+@import "../../bootstrap-4.5.3/scss/utilities";

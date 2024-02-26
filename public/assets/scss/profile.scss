@@ -1,0 +1,36 @@
+// breakpoints
+.fa-star.checked {
+    color: orange;
+}
+
+.star.selected {
+    color: red;
+}
+
+.image-content {
+    img {
+        max-width: 150px;
+    }
+}
+
+
+
+/****************************
+*** LARGER MOBILE DEVICES ***
+*****************************/
+@media only screen and (min-width: 640px) {}
+
+/*******************************
+*** TABLET & SMALLER LAPTOPS ***
+********************************/
+@media only screen and (min-width: 960px) {}
+
+/**************
+*** DESKTOP ***
+***************/
+@media only screen and (min-width: 1200px) {}
+
+/*************************
+*** LARGE VIEWING SIZE ***
+**************************/
+@media only screen and (min-width: 1600px) {}

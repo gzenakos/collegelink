@@ -1,0 +1,93 @@
+// breakpoints
+
+.hotel-search {
+    overflow-x: visible;
+}
+
+
+#slider-range {
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+    html .ui-button.ui-state-disabled:hover,
+    html .ui-button.ui-state-disabled:active {
+        border-radius: 50%;
+    }
+
+    .ui-state-focus,
+    .ui-widget-content .ui-state-focus,
+    .ui-state-hover,
+    .ui-widget-content .ui-state-hover,
+    .ui-state-active,
+    .ui-widget-content .ui-state-active {
+        border-color: var(--orange);
+        outline-color: var(--orange);
+    }
+}
+
+
+.box {
+    box-sizing: border-box;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.form-control {
+    background-color: #f4f4f4;
+}
+
+aside form input,
+aside form select,
+aside form textarea {
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    padding: 10px 5px;
+    margin: 5px 0 15px 0;
+    width: 100%;
+    background: #efefef;
+}
+
+aside form label {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+aside form input[type="button"] {
+    font-size: 18px;
+    font-family: "RobotoL";
+    text-transform: uppercase;
+}
+
+
+/****************************
+*** LARGER MOBILE DEVICES ***
+*****************************/
+@media only screen and (min-width: 640px) {}
+
+/*******************************
+*** TABLET & SMALLER LAPTOPS ***
+********************************/
+@media only screen and (min-width: 960px) {}
+
+/**************
+*** DESKTOP ***
+***************/
+@media only screen and (min-width: 1200px) {}
+
+/*************************
+*** LARGE VIEWING SIZE ***
+**************************/
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,34 @@
+$orange: #eb6639;
+$black-olive: #3e4031;
+$gowun-batang: "Gowun Batang", serif;
+$open-sans: "Open Sans", sans-serif;
+
+$color-list: orange $orange, black-olive $black-olive;
+
+@each $value in $color-list {
+    .text-#{nth($value, 1)} {
+        color: nth($value, 2) !important;
+
+        &-hover {
+            &:hover {
+                color: nth($value, 2);
+            }
+        }
+    }
+
+    .fill-#{nth($value, 1)} {
+        fill: nth($value, 2);
+    }
+
+    .bg-#{nth($value, 1)} {
+        background-color: nth($value, 2);
+    }
+}
+
+$fonts-list: open-sans $open-sans, gowun-batang $gowun-batang;
+
+@each $value in $fonts-list {
+    .text-#{nth($value, 1)} {
+        font-family: nth($value, 2);
+    }
+}
